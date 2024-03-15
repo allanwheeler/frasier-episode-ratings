@@ -7,6 +7,7 @@
 </script>
 
 {#each ticks as tick, i}
+  <!-- vary line type based on seriesAvg -->
   {#if tick === seriesAvg}
     <line
       x1={xScale(seriesAvg)}
@@ -25,7 +26,7 @@
     >
       Avg {seriesAvg}
     </text>
-    <text x={xScale(seriesAvg)} y={0} dy="-0.5rem" text-anchor="middle">
+    <text x={xScale(seriesAvg)} y={0} dy="-0.9rem" text-anchor="middle">
       Avg {seriesAvg}
     </text>
   {:else}
