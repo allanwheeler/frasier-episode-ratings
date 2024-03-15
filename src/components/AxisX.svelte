@@ -2,7 +2,6 @@
   export let innerHeight;
   export let xScale;
   export let seriesAvg;
-
   let ticks = [6, 7, 8.2, 9, 10];
 </script>
 

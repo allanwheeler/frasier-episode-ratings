@@ -5,7 +5,6 @@
   import Tooltip from '$components/Tooltip.svelte';
   import { scaleLinear } from 'd3-scale';
   import { rank, min, ascending } from 'd3-array';
-
   import { flip } from 'svelte/animate';
   import { fade } from 'svelte/transition';
 

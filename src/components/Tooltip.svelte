@@ -15,7 +15,7 @@
     margin.left +
     (data.averageEpisodeRating > seriesAvg ? xOffset : -xOffset - 40);
 
-  // Adjust y based on sortBy
+  // Adjust y based on sortBy values
   $: y =
     sortBy === 'episode'
       ? yScale(data.episode - 1) + margin.top + yOffset
