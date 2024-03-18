@@ -49,8 +49,14 @@
       </select>
     </div>
     <div class="buttons">
-      <button on:click={() => (sortBy = 'rating')}>Sort by rating</button>
-      <button on:click={() => (sortBy = 'episode')}>Sort by episode</button>
+      <button
+        on:click={() => (sortBy = 'episode')}
+        class:button-active={sortBy === 'episode'}>Sort by episode</button
+      >
+      <button
+        on:click={() => (sortBy = 'rating')}
+        class:button-active={sortBy === 'rating'}>Sort by rating</button
+      >
     </div>
   </div>
   <div id="chart-container" bind:clientWidth={width} bind:clientHeight={height}>
@@ -164,7 +170,7 @@
   button {
     padding: 4px 6px;
     background: #fff;
-    border: 1px solid #919191;
+    border: 1px solid #cfcfcf;
     color: #222; /* White text color */
     font-size: 0.8rem;
     cursor: pointer;
@@ -173,23 +179,23 @@
       transform 0.2s ease; /* Smooth transition for hover and click effects */
   }
 
-  button:focus {
-    background-color: #ededed; /* Slightly darker grey on hover */
-  }
-
   .buttons button:first-child {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     border-right: none;
   }
 
   .buttons button:last-child {
-    border-top-right-radius: 5px;
+    border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
   }
 
   .buttons button:not(:last-child) {
     margin-right: -1px;
+  }
+
+  .button-active {
+    background-color: #ededed; /* Grey background */
   }
 
   #chart-container {
