@@ -13,7 +13,7 @@
   $: x =
     xScale(data.averageEpisodeRating) +
     margin.left +
-    (data.averageEpisodeRating > seriesAvg ? xOffset : -xOffset - 40);
+    (data.averageEpisodeRating >= seriesAvg ? xOffset : -xOffset - 40);
 
   // Adjust y based on sortBy values
   $: y =
