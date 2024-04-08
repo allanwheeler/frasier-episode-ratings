@@ -199,8 +199,15 @@
   }
 
   #chart-container {
+    max-width: 1000px;
+    max-height: 1000px;
     font-size: 0.7rem;
     position: relative;
     height: 90vh;
+  }
+
+  .source {
+    margin-top: 1rem;
+    font-size: 0.7rem;
   }
 </style>
