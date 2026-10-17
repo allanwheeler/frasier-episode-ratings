@@ -32,6 +32,10 @@
     ? 'left'
     : 'right'}"
 >
+  {#if data.combinedEpisode}
+    <div>{data.title}</div>
+    <div>One IMDb rating for both parts</div>
+  {/if}
   {data.averageEpisodeRating} / 10
 </div>
 

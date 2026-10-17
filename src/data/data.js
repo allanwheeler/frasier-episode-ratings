@@ -1082,7 +1082,8 @@ export default [
   {
     season: 4,
     episode: 19,
-    title: 'Three Dates and a Breakup',
+    title: 'Three Dates and a Breakup, Parts 1–2',
+    combinedEpisode: true,
     year: 1997,
     runtimeMin: 60,
     averageEpisodeRating: 8.1,

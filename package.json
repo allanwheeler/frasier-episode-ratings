@@ -1,6 +1,7 @@
 {
   "name": "svelte-visualization-template",
   "private": true,
+  "packageManager": "pnpm@9.3.0",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
